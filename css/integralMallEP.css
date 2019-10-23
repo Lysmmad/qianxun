@@ -1,0 +1,77 @@
+/* 内容部分 */
+.bcontenbox>img{
+	position: absolute;
+	left: 10px;
+}
+.bcontenbox{
+	position: relative;
+}
+.bcontenbox .scontenbox{
+	overflow: hidden;
+	margin: 10px;
+	padding: 10px;
+	box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.4)
+}
+.bcontenbox .scontenbox a{
+	float: right;
+	color: #a7b3bc;
+	font-size: 14px;
+	font-weight: bold;
+}
+.bcontenbox .scontenbox .scboxleft{
+	box-sizing: border-box;
+	padding: 20px;
+	margin: 20px;
+	width: 460px;
+	float: left;
+	border-right: 1px solid #ccc;
+}
+.bcontenbox .scontenbox .scboxleft img{
+	float: left;
+}
+.bcontenbox .scontenbox .scboxleft .logo{
+	margin-left: 20px;
+}
+.bcontenbox .scontenbox .scboxleft .ep{
+	margin:35px 15px;
+}
+.bcontenbox .scontenbox .scboxleft h3{
+	line-height: 40px;
+	margin-left: 70px;
+	font-weight: bolder;
+}
+.bcontenbox .scontenbox .scboxright{
+	margin: 30px;
+	width: 500px;
+	float: right;
+}
+.bcontenbox .scontenbox .scboxright .r{
+	position: relative;
+	float: left;
+	margin-left: 10px;
+	width: 210px;
+	height: 275px;
+	background: url('../images/prize.png') no-repeat;
+}
+.bcontenbox .scontenbox .scboxright .r img{
+	position: absolute;
+	left: 50%;
+	margin-left: -85px
+}
+.bcontenbox .scontenbox .scboxright .r p{
+	height: 40px;
+	position: absolute;
+	left: 10px;
+	bottom: 60px;
+	color: #425c6f;
+}
+.bcontenbox .scontenbox .scboxright .r p>b{
+	font-size: 35px;
+	font-weight: bolder;
+}
+.bcontenbox .scontenbox .scboxright .r p>span{
+	color: #7d8395;
+	font-size: 14px;
+	margin-left: 5px;
+	font-weight: bold;
+}

@@ -1,0 +1,43 @@
+/*
+* @Author: hp
+* @Date:   2019-08-12 14:22:25
+* @Last Modified by:   hp
+* @Last Modified time: 2019-08-12 14:49:27
+*/
+.aboutUs{
+	width: 1100px;
+	margin: 0px auto;
+	overflow: hidden;	
+}
+.aboutUs h1{
+	text-align: center;
+	font-size: 50px;
+}
+.aboutUs .abo-left{
+	margin: 100px 0px;
+	width: 550px;
+	float: left;
+}
+.aboutUs .abo-left ul li{
+	line-height: 35px;
+}
+.aboutUs .abo-left ul li h3{
+	color: #657176;
+}
+.aboutUs .abo-left ul li p{
+	color: #828282;
+}
+.aboutUs .abo-right{
+	margin: 100px 0px;
+	width: 356px;
+	float: right;
+}
+.aboutUs .abo-right ul li{
+	float: left;
+	padding: 15px;
+}
+.aboutUs .abo-right ul li p{
+	text-align: center;
+	font-size: 18px;
+	color: #b9b9b9;
+}

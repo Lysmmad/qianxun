@@ -1,0 +1,151 @@
+/*
+* @Author: hp
+* @Date:   2019-08-10 14:19:52
+* @Last Modified by:   hp
+* @Last Modified time: 2019-08-15 10:07:02
+*/
+.container{
+	width: 855px;
+	margin: 0px auto;
+}
+.container ul{
+	width: 170px;
+	margin: 0px auto;
+	position: relative;
+	left: 64px;
+	overflow: hidden;
+	padding-bottom: 20px;
+}
+.container li{
+	float: left;
+}
+.container li i{
+	display: block;
+	width: 38px;
+	height: 33px;
+	background: url('../images/version_bg.png') no-repeat;
+	background-position: -295px -213px;
+}
+.container li:nth-child(1){
+	width: 38px;
+	height: 38px;
+	background: url('../images/version_bg.png') no-repeat;
+	background-position: -296px -179px;
+}
+.container li:nth-child(2){
+	line-height: 38px;
+	padding-left: 5px;
+	font-size: 18px;
+	color: black;
+}
+.container .logfoot li:nth-child(1){
+	background-position: -294px -279px;
+}
+.container hr{
+	transform: rotate(90deg) scale(0.2, 1) translate(223px, 85px);
+	border: 2px solid #1cadf0;
+} 
+.container .logfoot hr{
+	transform: rotate(90deg) scale(0.1, 1) translate(-35px, 84px);
+}
+
+.box{
+	width: 100%;
+	overflow: hidden;
+}
+.box .logright hr{
+	width: 200%;
+	position: absolute;
+	left: -430px;
+	top: 354px;
+	transform: rotate(90deg);
+	border: 2px solid #1cadf0;
+}
+.box .logleft hr{
+	width: 200%;
+	position: absolute;
+	left: 35px;
+	top: 150px;
+	transform: rotate(90deg);
+	border: 2px solid #1cadf0;
+}
+.logright,.logleft{
+	margin-top: 6px;
+	padding: 20px;
+	color: #908486;
+	width: 350px;
+	background-color: #e6e7eb;
+	position: relative;
+}
+.logright1,.logleft1{
+	color: white;
+	background-color: #1cadf0;
+}
+.logright{
+	float: right;
+}
+.logright .rightcircle{
+	top: -6px;
+	left: -44px;
+}
+.logright .rightcircle,.logleft .leftcircle{
+	width: 12px;
+	height: 12px;
+	background: url('../images/version_bg.png') no-repeat;
+	position: absolute;
+	border-radius: 50%;
+	background-position:-317px -318px; 
+}
+.logright .rightpot,.logleft .leftpot{
+	top: 0px;
+	position: absolute;
+}
+.logright .rightpot{
+	left: -10px;
+}
+.container p{
+	line-height: 30px;
+}
+.logleft{
+	float: left;
+}
+.logleft .leftcircle{
+	top: -6px;
+	left: 421px;
+}
+.logleft .leftpot{
+	left: 390px;
+	transform: rotate(-90deg);
+}
+
+/* 侧导航栏 */
+.slide{
+	background-color: #eaf1f3;
+	width: 60px;
+	height: 60px;
+	margin: 5px;
+	right: 5px;
+	text-align: center;
+	cursor: pointer;
+	position: fixed;
+}
+.slide p{
+	line-height: 60px;
+	color: #908486;
+}
+.slide p:hover{
+	color: #1cadf0;
+}
+.slidet{
+	top: 10px;
+	display: none;
+}
+.slidec{
+	top: 50%;
+	margin-top: -30px;
+	display: block;
+}
+.slideb{
+	bottom: 10px;
+	display: block;
+}

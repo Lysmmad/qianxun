@@ -1,0 +1,30 @@
+.thQuestion .Ques a{
+	text-decoration: underline;
+	color:white;
+}
+.thQuestion{
+	width: 1100px;
+	margin: 0px auto;
+}
+.thQuestion h1{
+	text-align: center;
+	color: #3aa624;
+}
+.thQuestion .Ques{
+	margin-top: 30px;
+	padding: 20px;
+	border-radius: 5px;
+	background-color: #3aa624;
+	color: white;
+	box-shadow: 0px 5px 20px 0px #3aa624;
+}
+.thQuestion .Ques h3{
+	font-size: 20px;
+	line-height: 40px;
+}
+.thQuestion .Ques p{
+	line-height: 20px;
+	font-size: 14px;
+	font-weight: bold;
+	letter-spacing: 2px;
+}

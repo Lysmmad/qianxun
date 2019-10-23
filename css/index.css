@@ -1,0 +1,606 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+body{
+	font-size: 14px;
+	color: #333;
+	font-family: "微软雅黑";
+}
+.logo,.musiclogo,aside,nav,.download{
+	z-index: 3;
+	position: fixed;
+}
+.logo{
+	top: 20px;
+	left: 30px;
+	width: 150px;
+}
+/* 背景音乐 */
+.musiclogo{
+	width: 50px;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+	animation: musicgo 8s linear infinite;
+}
+@keyframes musicgo{
+	0%{transform:rotate(0deg);}
+	100%{transform:rotate(360deg);}
+}
+/* 侧导航栏 */
+aside{
+	top: 50%;
+	right: 10px;
+	margin-top: -135px;
+	z-index: 6;
+}
+aside ul li{
+	margin: 10px;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	border: 1px solid #cef3fb;
+	cursor: pointer;
+}
+aside ul li.addear{
+	background-image: url('../images/side_bg.png');
+	background-size: 100% 100%;
+	width: 50px;
+	height: 50px;
+	border: none;
+	margin-left: 0px;
+	animation: musicgo 8s linear infinite;
+}
+@keyframes eargo{
+	0%{transform:rotate(0deg);}
+	100%{transform:rotate(360deg);}
+}
+/* 背景切换内容部分 */
+html,body,section{
+	width: 100%;
+	height: 100%;
+}
+body{
+	overflow: hidden;
+}
+section>div{
+	width: 100%;
+	height: 100%;
+}
+section{
+	position: relative;
+	top: 0%;
+}
+section .screen1{
+	overflow: hidden;
+	background-image: url('../images/bg01.jpg');
+	background-size: 100% 100%;
+}
+section .src{
+	position: relative;
+	text-align: center;
+	width: 80%;
+	margin: 90px auto;
+}
+section .text1{
+	display: inline-block;
+	width: 148px;
+	height: 50px;
+	background: url('../images/logo-text.png') no-repeat;
+	background-position: 17px -16px;
+	left: 0px;
+	position: relative;
+	transition: 1s;
+}
+section .none .text1{
+	left:800px;
+	transform: rotate(360deg);
+	opacity: 0;
+}
+section .text2{
+	width: 200px;
+	height: 50px;
+	display: inline-block;
+	position: relative;
+	right: 0px;
+	transition: 1s;
+}
+section .none .text2{
+	right:800px;
+	transform: rotate(360deg);
+	opacity: 0;
+}
+section .screen1 .src .biglogo{
+	margin: 80px;
+	margin-bottom: 30px;
+	width: 150px;
+	position: relative;
+	animation: balo 5s linear infinite;
+}
+@keyframes balo{
+	0%{top: 0px;}
+	50%{top:-50px;}
+	100%{top:0px;}
+}
+section .screen1 .src .clound{
+	width: 100%;
+	position: absolute;
+	top: 0px;
+	left: 300px;
+}
+section .screen1 .src .clound img:nth-child(1){
+	animation: cloundgo 50s linear infinite;
+}
+section .screen1 .src .clound img:nth-child(2){
+	margin-left: 250px;
+	position: relative;
+	top: -50px;
+	z-index: 0;
+	animation: cloundgo1 100s linear infinite;
+}
+@keyframes cloundgo{
+	0%{transform: translate(0, 0);}
+	47%{transform: translate(-1200px,0);}
+	48%{transform: translate(-1250px,0);opacity: 0;}
+	50%{transform: translate(1000px,0);opacity: 0;}
+	52%{transform: translate(900px,0);opacity: 1;}
+	100%{transform: translate(0,0);}
+}
+@keyframes cloundgo1{
+	0%{transform: translate(0, 0);}
+	47%{transform: translate(-2000px,0);}
+	48%{transform: translate(-2050px,0);opacity: 0;}
+	50%{transform: translate(1000px,0);opacity: 0;}
+	52%{transform: translate(900px,0);opacity: 1;}
+	100%{transform: translate(0,0);}
+}
+section .text1 img{
+	width: 100px;
+	margin-left: -20px;
+}
+section .text2 img{
+	width: 200px;
+}
+section p{
+	color: white;
+	transition: 1s;
+}
+section .none p{
+	opacity: 0;
+	transform: scale(0.1);
+}
+
+
+section .screen2{
+	overflow: hidden;
+	background-image: url('../images/bg02.jpg');
+	background-size: 100% 100%;
+}
+section .screen2 .src{
+	position: relative;
+}
+section .screen2 .src .combg{
+	margin: 40px;
+	margin-bottom: 30px;
+	width: 150px;
+	z-index: 5;
+}
+section .screen2 .src .biglogo{
+	position: absolute;
+	width: 100px;
+	top: 66px;
+	left: 50%;
+	margin-left: -50px;
+	animation: comgo 10s infinite;
+}
+@keyframes comgo{
+	0%{transform-origin: 50px 50px;transform: rotate(30deg);}
+	30%{transform-origin: 50px 50px;transform: rotate(160deg);}
+	50%{transform-origin: 50px 50px;transform: rotate(0deg);}
+	80%{transform-origin: 50px 50px;transform: rotate(30deg);}
+	90%{transform-origin: 50px 50px;transform: rotate(40deg);}
+	92%{transform-origin: 50px 50px;transform: rotate(30deg);}
+	94%{transform-origin: 50px 50px;transform: rotate(20deg);}
+	100%{transform-origin: 50px 50px;transform: rotate(30deg);}
+}
+section .screen2 .src .fire-ball{
+	position: absolute;
+	top: -20px;
+	right: 20%;
+	animation: fireballgo 6s linear infinite;
+}
+
+
+section .screen3{
+	overflow: hidden;
+	background-image: url('../images/bg03.jpg');
+	background-size: 100% 100%;
+}
+section .screen3 .src .biglogo{
+	margin: 40px;
+	width: 150px;
+	position: absolute;
+	left: 50%;
+	margin-left: -75px;
+	top: -250px;
+	animation: conchgo 8s linear infinite;
+}
+@keyframes conchgo{
+	0%{transform: translate(0,0);}
+	50%{transform: translate(0,-25px);}
+	100%{transform: translate(0,0);}
+}
+section .screen3 .src .pao{
+	position: absolute;
+	top: -60px;
+	left: 50%;
+	margin-left: -115px;
+}
+section .screen3 .src .pao img{
+	opacity: 0;
+}
+section .screen3 .src .pao img:nth-child(1){
+	position: relative;
+	left: 150px;
+	top: 25px;
+	transition: ;
+	animation: paogo 8s linear 5s infinite;
+}
+section .screen3 .src .pao img:nth-child(2){
+	position: relative;
+	left: 70px;
+	top: 25px;
+	animation: paogo 8s linear 1s infinite;
+}
+section .screen3 .src .pao img:nth-child(3){
+	animation: paogo 8s linear 5s infinite;
+}
+section .screen3 .src .pao img:nth-child(4){
+	animation: paogo 8s linear 6s infinite;
+}
+section .screen3 .src .pao img:nth-child(5){
+	animation: paogo 8s linear 2s infinite;
+}
+section .screen3 .src .pao img:nth-child(6){
+	animation: paogo 8s linear 4s infinite;
+}
+section .screen3 .src .pao img:nth-child(7){
+	animation: paogo 8s linear 7s infinite;
+}
+section .screen3 .src .pao img:nth-child(8){
+	animation: paogo 8s linear 2s infinite;
+}
+section .screen3 .src .pao img:nth-child(9){
+	animation: paogo 8s linear 6s infinite;
+}
+section .screen3 .src .pao img:nth-child(10){
+	position: relative;
+	left: -125px;
+	top: 25px;
+	animation: paogo 8s linear 3s infinite;
+}
+section .screen3 .src .pao img:nth-child(11){
+	position: relative;
+	left: -100px;
+	top: 25px;
+	animation: paogo 8s linear 1s infinite;
+}
+section .screen3 .src .pao img:nth-child(12){
+	position: relative;
+	left: -70px;
+	top: 25px;
+	animation: paogo 8s linear 4s infinite;
+}
+section .screen3 .src .pao  img:nth-child(13){
+	position: relative;
+	left: -50px;
+	top: 25px;
+	animation: paogo 8s linear 2s infinite;
+}
+@keyframes paogo{
+	0%{opacity: 0;transform: translate(0, 0)}
+	80%{opacity: 1;transform: translate(0, -250px)}
+	100%{opacity: 0;transform: translate(0, -300px)}
+}
+section .screen3 .src .textgo{
+	margin-top: 350px;
+	z-index: 5;
+}
+
+
+
+section .screen4{
+	overflow: hidden;
+	background-image: url('../images/bg04.jpg');
+	background-size: 100% 100%;
+}
+section .screen4 .src .biglogo{
+	margin: 40px;
+	margin-bottom: 30px;
+	width: 150px;
+	position: absolute;
+	left: 50%;
+	margin-left: -75px;
+	top: -250px;
+	animation: ballgo 15s linear infinite;
+}
+@keyframes ballgo{
+	0%{transform: rotate(0deg);transform-origin: 75px 190px;}
+	25%{transform: rotate(-25deg);transform-origin: 75px 190px;}
+	50%{transform: rotate(0deg);transform-origin: 75px 190px;}
+	75%{transform: rotate(25deg);transform-origin: 75px 190px;}
+	100%{transform: rotate(0deg);transform-origin: 75px 190px;}
+}
+section .screen4 .src .textgo{
+	margin-top: 350px;
+	z-index: 5;
+}
+section .screen5{
+	overflow: hidden;
+	background-image: url('../images/bg05.jpg');
+	background-size: 100% 100%;
+}
+section .screen5 .src .Biglogo{
+	margin: 40px;
+	margin-bottom: 30px;
+	width: 150px;
+	position: absolute;
+	left: 50%;
+	margin-left: -75px;
+	top: -250px;
+}
+section .screen5 .src .Biglogo ul li{
+	position: absolute;
+	top: -30px;
+	left: -20px;
+	opacity: 0;
+	transform: scale(1);
+}
+section .screen5 .src .Biglogo ul li img{
+	width: 205px;
+	height: 245px;
+}
+section .screen5 .src .Biglogo ul li:nth-child(1){
+	opacity: 1;
+	animation: biglogogo 1s linear infinite;
+}
+section .screen5 .src .Biglogo ul li:nth-child(2){
+	animation: biglogogo 1s linear infinite;
+}
+section .screen5 .src .Biglogo ul li:nth-child(3){
+	animation: biglogogo 1s linear infinite;
+}
+section .screen5 .src .Biglogo ul li:nth-child(4){
+	animation: biglogogo 1s linear infinite;
+}
+section .screen5 .src .Biglogo ul li:nth-child(5){
+	animation: biglogogo 1s linear infinite;
+}
+section .screen5 .src .Biglogo ul li:nth-child(6){
+	animation: biglogogo 1s linear infinite;
+}
+@keyframes biglogogo{
+	0%{}
+	100%{opacity: 0;transform: scale(1.5);}
+}
+section .screen5 .src .textgo{
+	margin-top: 350px;
+	z-index: 5;
+}
+section .screen5 .src .fireball{
+	position: absolute;
+	width: 300px;
+	top: 100px;
+	right: -100px;
+}
+section .screen5 .src .fireball img:nth-child(1){
+	width: 70px;
+	position: relative;
+	top: -200px;
+	left: -20px;
+	animation: fireballgo 3s linear infinite;
+}
+section .screen5 .src .fireball img:nth-child(2){
+	width: 100px;
+	margin: 50px;
+	animation: fireballgo 6s linear infinite;
+}
+@keyframes fireballgo{
+	0%{transform: translate(0,0);}
+	50%{transform: translate(0,20px);}
+	100%{transform: translate(0,0);}
+}
+
+
+section .screen6{
+	overflow: hidden;
+	background-image: url('../images/bg06.jpg');
+	background-size: 100% 100%;
+}
+section .screen6 .src .biglogo{
+	margin: 40px;
+	margin-bottom: 30px;
+	width: 150px;
+	position: absolute;
+	left: 50%;
+	margin-left: -75px;
+	top: -250px;
+	animation: airgo 3s linear infinite;
+	z-index: 3
+}
+@keyframes airgo{
+	0%{top: -250px;}
+	50%{top: -270px;}
+	100%{top: -250px;}
+}
+section .screen6 .src .bigbggo{
+	background: url('../images/screen06_bg.png') no-repeat;
+	position: absolute;
+	width: 149%;
+	height: 400%;
+	top: -224px;
+	left: -284px;
+	animation: bigbggo 6s linear infinite;
+}
+@keyframes bigbggo{
+	0%{top:-224px;}
+	100%{top: -50px;}
+}
+section .screen6 .src .textgo{
+	margin-top: 350px;
+	z-index: 5;
+}
+
+
+section .screen7{
+	overflow: hidden;
+	background-image: url('../images/bg07.jpg');
+	background-size: 100% 100%;
+}
+section .screen7 .src .biglogobg{
+	background: url('../images/black-hole.png') no-repeat;
+	background-size: cover;
+	margin: 40px;
+	left: 50%;
+	margin-left: -100px;
+	margin-bottom: 30px;
+	width: 200px;
+	position: relative;	z-index: 5;
+}
+section .screen7 .src .biglogo{
+	width: 200px;
+	animation: rate 5s linear infinite;
+}
+@keyframes rate{
+	0%{transform: rotate(0deg);}
+	50%{transform: rotate(180deg);}
+	100%{transform: rotate(360deg);}
+}
+section .screen7 .src .fly i:nth-child(1){
+	position: absolute;
+	left: -200px;
+	top: 600px;
+	animation: flygo 1s linear 1s infinite;
+}
+section .screen7 .src .fly i:nth-child(2){
+	position: absolute;
+	left: -180px;
+	top: -100px;
+	animation: flygo 2s linear 2s infinite;
+}
+section .screen7 .src .fly i:nth-child(3){
+	position: absolute;
+	left: 1200px;
+	top: 540px;
+	animation: flygo 2s linear 1s infinite;
+}
+section .screen7 .src .fly i:nth-child(4){
+	position: absolute;
+	left: 1230px;
+	top: -90px;
+	animation: flygo 2s linear 2s infinite;
+}
+@keyframes flygo{
+	0%{}
+	100%{left: 50%;margin-left: -25px; top: 80px;}
+}
+
+
+/* 下载 */
+.download{
+	position: fixed;
+	bottom: 20%;
+	left: 50%;
+	margin-left: -155px;
+} 
+.download p{
+	font-size: 15px;
+	color: white;
+}
+/* 导航栏 */
+nav{
+	width: 100%;
+	bottom: 0px;
+	height: 60px;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.6);
+	overflow:hidden;
+}
+nav ul{
+	left: 50%;
+	margin-left: -500px;
+	position: absolute;
+}
+nav ul li{
+	width: 200px;
+	height: 60px;
+	line-height: 60px;
+	float: left;
+	font-size: 18px;
+}
+@media screen and (min-width:980px) and (max-width: 1024px){
+	nav ul li{
+		width: 180px;
+	}
+	nav ul{
+		margin-left: -450px;
+	}
+}
+@media screen and (min-width: 769px) and (max-width: 980px){
+	nav ul li{
+		width: 150px;
+	}
+	nav ul{
+		margin-left: -375px;
+	}
+}
+@media screen and (min-width: 631px) and (max-width: 769px){
+	nav ul li{
+		width: 120px;
+	}
+	nav ul{
+		margin-left: -300px;
+	}
+}
+@media screen and (max-width: 631px){
+	nav{
+		opacity: 0;
+	}
+	.download{
+		bottom: 10%;
+	}
+}
+@media screen and (max-height: 650px){
+	.download{
+		opacity: 0;
+	}
+}
+nav ul li span{
+	color: white;
+	padding-right: 5px;
+}
+nav ul li a{
+	color: white;
+}
+nav ul li:nth-child(1):hover{
+	background-color: #226cd4;
+}
+nav ul li:nth-child(2):hover{
+	background-color: #cc3333;
+}
+nav ul li:nth-child(3):hover{
+	background-color: #3aa624;
+}
+nav ul li:nth-child(4):hover{
+	background-color: #c145cc;
+}
+nav ul li:nth-child(5):hover{
+	background-color: #f2ca00;
+}
